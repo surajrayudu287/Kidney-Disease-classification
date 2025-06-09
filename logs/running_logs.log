@@ -1,0 +1,81 @@
+[2025-06-09 13:55:46,657: INFO: main: welcome to custom log]
+[2025-06-10 14:16:07,818: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-10 14:16:07,829: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-10 14:16:07,829: INFO: common: created directory at: artifacts]
+[2025-06-10 14:16:07,835: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-10 14:16:07,835: INFO: 2140807067: Downloading data from https://drive.google.com/file/d/1sTXnAViiu4j7dxh3xKb4xAA_vmQasNnL/view?usp=sharing into file artifacts/data_ingestion/dataset.zip]
+[2025-06-10 14:16:42,561: INFO: 2140807067: Downloaded data from https://drive.google.com/file/d/1sTXnAViiu4j7dxh3xKb4xAA_vmQasNnL/view?usp=sharing into file artifacts/data_ingestion/dataset.zip]
+[2025-06-10 14:37:13,486: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-10 14:37:13,487: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-10 14:37:13,488: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-10 14:37:13,488: INFO: common: created directory at: artifacts]
+[2025-06-10 14:37:13,488: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-10 14:37:13,489: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    data_ingestion.main()
+  File "C:\Users\suraj\kidney-Disease-Classification\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "C:\Users\suraj\kidney-Disease-Classification\src\CnnClassifier\components\Data_Ingestion.py", line 30, in download_file
+    raise e
+  File "C:\Users\suraj\kidney-Disease-Classification\src\CnnClassifier\components\Data_Ingestion.py", line 20, in download_file
+    os.makedirs("artifacts/data_ingestion", exist_ok=True)
+NameError: name 'os' is not defined
+[2025-06-10 14:38:25,961: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-10 14:38:25,962: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-10 14:38:25,962: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-10 14:38:25,962: INFO: common: created directory at: artifacts]
+[2025-06-10 14:38:25,962: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-10 14:38:25,962: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\suraj\Kidney-Disease-classification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\components\Data_Ingestion.py", line 30, in download_file
+    raise e
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\components\Data_Ingestion.py", line 20, in download_file
+    os.makedirs("artifacts/data_ingestion", exist_ok=True)
+NameError: name 'os' is not defined
+[2025-06-10 14:39:03,684: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-10 14:39:03,685: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-10 14:39:03,685: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-10 14:39:03,685: INFO: common: created directory at: artifacts]
+[2025-06-10 14:39:03,687: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-10 14:39:03,687: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\suraj\Kidney-Disease-classification\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\components\Data_Ingestion.py", line 30, in download_file
+    raise e
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\components\Data_Ingestion.py", line 20, in download_file
+    os.makedirs("artifacts/data_ingestion", exist_ok=True)
+NameError: name 'os' is not defined
+[2025-06-10 14:40:17,481: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-10 14:40:17,481: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-10 14:40:17,482: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-10 14:40:17,482: INFO: common: created directory at: artifacts]
+[2025-06-10 14:40:17,482: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-10 14:40:17,483: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\suraj\Kidney-Disease-classification\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\components\Data_Ingestion.py", line 30, in download_file
+    raise e
+  File "C:\Users\suraj\Kidney-Disease-classification\src\CnnClassifier\components\Data_Ingestion.py", line 20, in download_file
+    os.makedirs("artifacts/data_ingestion", exist_ok=True)
+NameError: name 'os' is not defined
+[2025-06-10 14:42:10,953: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-10 14:42:10,953: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-10 14:42:10,955: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-10 14:42:10,955: INFO: common: created directory at: artifacts]
+[2025-06-10 14:42:10,955: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-10 14:42:10,957: INFO: Data_Ingestion: Downloading data from https://drive.google.com/file/d/1sTXnAViiu4j7dxh3xKb4xAA_vmQasNnL/view?usp=sharing into file artifacts/data_ingestion/dataset.zip]
+[2025-06-10 14:42:47,555: INFO: Data_Ingestion: Downloaded data from https://drive.google.com/file/d/1sTXnAViiu4j7dxh3xKb4xAA_vmQasNnL/view?usp=sharing into file artifacts/data_ingestion/dataset.zip]
+[2025-06-10 14:42:55,429: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]

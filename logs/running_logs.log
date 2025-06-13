@@ -408,3 +408,69 @@ x==========x]
 [2025-06-12 14:59:37,584: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-06-12 15:18:36,963: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.8.202:8080]
+[2025-06-12 15:18:36,963: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-12 15:18:55,228: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 15:18:55] "GET / HTTP/1.1" 200 -]
+[2025-06-12 15:19:09,581: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "C:\Users\suraj\kidney-Disease-classification\src\CnnClassifier\pipeline\prediction.py", line 13, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-06-12 15:19:09,698: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 15:19:09] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-06-12 15:26:04,177: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 15:26:04] "GET / HTTP/1.1" 200 -]
+[2025-06-12 15:26:09,188: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "C:\Users\suraj\kidney-Disease-classification\src\CnnClassifier\pipeline\prediction.py", line 13, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\suraj\AppData\Local\Programs\Python\Python38\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-06-12 15:26:09,191: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 15:26:09] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-06-12 15:26:19,966: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 15:26:19] "GET / HTTP/1.1" 200 -]
+[2025-06-12 15:43:27,531: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.8.202:8080]
+[2025-06-12 15:43:27,531: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-12 15:43:41,587: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 15:43:41] "GET / HTTP/1.1" 200 -]
